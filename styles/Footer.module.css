@@ -1,0 +1,30 @@
+/* Footer.module.css */
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .footer p {
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+
+
+
+  .social {
+/**/
+  }
+
+  .social a {
+    font-size: 40px; /* Adjust the size of the icons */
+    margin-right: 10px; /* Adjust the right margin for spacing */
+    color: #ededed;
+  } 
+
+
+  .a {
+    color: #e50505;
+    text-decoration: none;
+  }

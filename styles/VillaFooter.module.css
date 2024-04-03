@@ -1,0 +1,35 @@
+/* Footer.module.css */
+
+.footer {
+  background: linear-gradient(to right, #ff3366, #33ff99, #ffcc33);
+  animation: moveX 3s infinite alternate, moveY 4s infinite alternate;
+  color: #000000;
+  padding: 1rem;
+  text-align: center;
+  
+}
+
+.footer p {
+  font-size: 18px; /* Adjust the font size as needed */
+}
+  
+
+.social {
+  /**/
+}
+
+.social a {
+  font-size: 40px; /* Adjust the size of the icons */
+  margin-right: 10px; /* Adjust the right margin for spacing */
+  color: #000000;
+} 
+
+    
+.a {
+color: #e50505;
+text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,121 @@
+/* Header.module.css */
+
+/* Header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black; /* Change background color */
+  color: rgb(255, 255, 255); /* Change text color */
+  padding: 1rem 20px; /* Adjust padding */
+}
+
+.stack {
+  display: grid;
+  text-decoration: none;
+}
+
+/* Logo styles */
+.logo {
+  flex: 1;
+  color: #e50505;
+  text-decoration: none;
+}
+
+
+
+
+
+
+.a {
+  color: #e50505;
+  text-decoration: none;
+}
+
+
+/* Navigation styles */
+.nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 20px;
+}
+
+.nav li a {
+  color: inherit; /* Inherit text color from parent (.header) */
+  text-decoration: none;
+  transition: color 0.3s; /* Add transition effect for color change */
+}
+
+.nav li a:hover {
+  color: red; /* Change text color on hover */
+}
+
+
+
+
+
+/* Social media styles */
+.social {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Adjust the gap between icons */
+}
+
+.social a {
+  margin-left: 10px; /* Adjust spacing between icons */
+  color: #e50505;
+  text-decoration: none;
+  font-size: 24px; /* Adjust the size of the icons */
+  margin-right: 10px; /* Adjust the right margin for spacing */
+
+
+
+}
+
+
+.social a img {
+  width: 30px; /* Adjust icon size */
+  height: auto; /* Maintain aspect ratio */
+  filter: brightness(0); /* Make icons white */
+  transition: filter 0.3s; /* Add transition effect */
+  
+}
+
+.social a img {
+  filter: brightness(0) !important;
+}
+
+
+
+/*Pulled from the Home.Module to have the style for the connect wallet button*/
+
+.connectWalletBtn{
+  accent-color: #c70000 !important;
+  background: #000000 !important;
+
+  border-color: #6b0a0a !important;
+  color: #cbcbd2 !important;
+  border: 1px solid #6b0a0a !important;
+}
+
+.connectWalletBtn:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #c70000 !important;
+}
+
+
+
+
+
+
+
+
+
+

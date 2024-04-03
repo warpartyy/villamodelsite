@@ -1,0 +1,178 @@
+/* Villa.module.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+.body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+.a {
+  color: #21c400;
+  text-decoration: none;
+}
+
+
+
+.body {
+  color: #e7e8e8;
+  background: #560000;
+}
+
+
+
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+
+
+
+.connect {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.description {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+
+
+/*Define the gradient*/
+.card a{
+  background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+  background-size: 200% auto; /* Background size to twice its width */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: background-position 0.5s; /* Transition duration*/
+}
+
+
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-left: 0;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+}
+
+
+
+/*.card,    idk that I need this?*/
+.footer {
+  border-color: #222;
+}
+.logo img {
+  filter: invert(1);
+}
+
+.connectWalletBtn{
+  
+
+  accent-color: #c70000 !important;
+  background: #000000 !important;
+
+  border-color: #6b0a0a !important;
+  color: #cbcbd2 !important;
+  border: 1px solid #6b0a0a !important;
+
+  
+
+}
+
+
+
+.connectWalletBtn:hover {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #c70000 !important;
+}
+
+
+
+
+/**************/
+
+
+/*This is cool but needs some work.*/
+
+
+.maybeLater {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #ff3366, #33ff99, #ffcc33);
+  animation: moveX 3s infinite alternate, moveY 4s infinite alternate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: white;
+}
+
+.maybeLater:hover {
+  animation: moveXHover 2s infinite alternate, moveYHover 3s infinite alternate;
+}
+
+@keyframes moveX {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes moveXHover {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50px);
+  }
+}
+
+@keyframes moveYHover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5s0px);
+  }
+}
+
