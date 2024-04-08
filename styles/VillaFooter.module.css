@@ -2,6 +2,7 @@
 
 .footer {
   background: linear-gradient(to right, #ff3366, #33ff99, #ffcc33);
+  font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the name of the font you selected */
   animation: moveX 3s infinite alternate, moveY 4s infinite alternate;
   color: #000000;
   padding: 1rem;

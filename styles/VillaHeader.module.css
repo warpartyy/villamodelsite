@@ -2,11 +2,13 @@
 
 /* Header styles */
 .header {
+  background: linear-gradient(to right, #ff3366, #33ff99, #ffcc33);
+  font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the name of the font you selected */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgb(0, 0, 0); /* Change background color */
-  color: rgb(255, 255, 255); /* Change text color */
+  color: rgb(0, 0, 0); /* Change text color */
   padding: 1rem 20px; /* Adjust padding */
 }
 
@@ -95,3 +97,28 @@ but I need to make sure that once disconnected the user is redirected to the non
   color: #ffffff !important;
   border: 1px solid #bd00c7 !important;
 }
+
+
+/* Villa.module.css */
+
+/* Hero section */
+/* styles/Villa.module.css */
+
+.hero {
+  width: 30%; /* Set the width of the video to 100% of its container */
+  height: auto; /* Allow the height to adjust proportionally based on the width */
+  max-width: 100px; /* Set a maximum width to prevent the video from becoming too large */
+  margin: 0 auto; /* Center the video horizontally */
+}
+
+
+/* styles/Villa.module.css */
+
+.heroVideo {
+  width: 100%; /* Set the width of the video to 100% of its container */
+  height: auto; /* Allow the height to adjust proportionally based on the width */
+  max-width: 1000px; /* Set a maximum width to prevent the video from becoming too large */
+  margin: 0 auto; /* Center the video horizontally */
+}
+
+

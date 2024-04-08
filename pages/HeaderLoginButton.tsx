@@ -10,7 +10,7 @@ const HeaderLoginButton: React.FC = () => {
 
   return (
     <button className={styles.connectWalletBtn} onClick={handleLogin}>
-      Login
+      The Villa
     </button>
   );
 };

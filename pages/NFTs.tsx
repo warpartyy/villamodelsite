@@ -1,72 +1,65 @@
-import { ConnectWallet, ThirdwebSDK } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
-import { NextPage } from "next";
-import {ThirdwebProvider} from "@thirdweb-dev/react";
-import { title } from "process";
-import {use, useEffect} from "react";
-import {useRouter} from "next/router";
-import { ethers } from "ethers";
+import Header from './Header';
+import Footer from './Footer';
 
-import Header from './Header'; // Import the Header component
-import Footer from './Footer'; // Import the footer component
+// Define the SongCard component
+const SongCard: React.FC<{ imageUrl: string; songTitle: string; songUrl: string }> = ({ imageUrl, songTitle, songUrl }) => {
+  return (
+    <div className={styles.card}>
+      <div className={styles.imageContainer}>
+        <Image src={imageUrl} width={300} height={300} alt={songTitle} />
+      </div>
+      <p>{songTitle}</p>
+      <button className={styles.button} onClick={() => window.open(songUrl)}>Collect</button>
+    </div>
+  );
+};
 
-
-
-
-
-
-
-const VillaToken: React.FC = () => {
+const NFTs: React.FC = () => {
   return (
     <main className={styles.main}>
-    <ThirdwebProvider>
-    <Header />
-
-      <div className={styles.container}>
+      {/*<ThirdwebProvider>*/}
+        <Header />
+        <div className={styles.container}>
           <h1 className={styles.title}>NFTs</h1>
-
-          
-          <h1> Sound drops</h1> {/* center this? */}
-          <p>info about Sound and Optimism. Include that you recieve $VILLA</p>
+          <h1> Sound Drops</h1>
+          <p>{/*Info about Sound and Optimism. Include that you receive $VILLA*/}</p>
           <div className={styles.container3}>
+            <SongCard
+              imageUrl="/images/ReadyOrNot.jpg"
+              songTitle="Ready or Not"
+              songUrl="https://www.sound.xyz/villamodel/ready-or-not"
+            />
+            <SongCard
+              imageUrl="/images/AllTheseThings.jpg"
+              songTitle="All These Things"
+              songUrl="https://www.sound.xyz/villamodel/all-these-things"
+            />
+            <SongCard
+              imageUrl="/images/MyQuest.jpg"
+              songTitle="My Quest"
+              songUrl="https://www.sound.xyz/villamodel/my-quest"
+            />
+          </div>
+<p>{/* */}</p>
 
 
-              <div className={styles.card}>
-                <h2>Import My Quest</h2>
-              </div>
-              <div className={styles.card}>
-                <h2>Import All These Things</h2>
-              </div>
-              <div className={styles.card}>
-                <h2>Import Ready or Not</h2>
-              </div>
+{/*}          <h1> Siki</h1>
+          <p>info about siki and hedera?</p>
+          <div className={styles.container2}>
+            <div className={styles.card}>
+              <h2>Wannabee</h2>
             </div>
-
-
-
-            <h1> Siki</h1> {/* center this? */}
-            <p>info about siki and hedera?</p>
-
-            <div className={styles.container2}>
-
-              <div className={styles.card}>
-                <h2>Wannabee</h2>
-              </div>
-              <div className={styles.card}>
-                <h2>Without You</h2>
-              </div>
-            </div>
-
-
-
-
-
-
-        <Footer/>
-      </div>
-      </ThirdwebProvider>
+            <div className={styles.card}>
+              <h2>Without You</h2>
+  </div> 
+  </div> */}
+        </div>
+        <Footer />
+      {/*<ThirdwebProvider>*/}
     </main>
   );
 };
-export default VillaToken;
+
+export default NFTs;

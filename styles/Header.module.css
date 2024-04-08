@@ -1,5 +1,3 @@
-/* Header.module.css */
-
 /* Header styles */
 .header {
   display: flex;
@@ -22,7 +20,11 @@
   text-decoration: none;
 }
 
-
+.logo a{
+  flex: 1;
+  color: #e50505;
+  text-decoration: none;
+}
 
 
 
@@ -69,14 +71,18 @@
 
 .social a {
   margin-left: 10px; /* Adjust spacing between icons */
-  color: #e50505;
+  color: #ffffff;
   text-decoration: none;
   font-size: 24px; /* Adjust the size of the icons */
   margin-right: 10px; /* Adjust the right margin for spacing */
 
-
-
 }
+
+
+.social a:hover {
+  color: red; /* Change text color on hover */
+}
+
 
 
 .social a img {

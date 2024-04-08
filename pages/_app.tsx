@@ -1,11 +1,11 @@
 import type { AppProps } from "next/app";
-import { MetaMaskWallet, ThirdwebProvider, coinbaseWallet, metamaskWallet, rainbowWallet, walletConnect } from "@thirdweb-dev/react";
+import { ConnectWallet, MetaMaskWallet, ThirdwebProvider, coinbaseWallet, metamaskWallet, rainbowWallet, walletConnect } from "@thirdweb-dev/react";
 import "../styles/globals.css";
 import { polygon } from "thirdweb/chains";
-import Layout from './ProtectedRoute';
+require('dotenv').config();
+import { ThirdWebAPI } from '../Components/config';
 
-
-const myChain = polygon;
+//const myChain = polygon;
 
 // This is the chain your dApp will work on.
 // Change this to the chain your app is built for.
@@ -18,7 +18,7 @@ AppProps) {
   return (
     <ThirdwebProvider
     activeChain={activeChain}
-    clientId={process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID}
+    clientId={ThirdWebAPI}
 
     authConfig={{
         domain: process.env.DOMAIN ||"",

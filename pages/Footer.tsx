@@ -22,8 +22,7 @@ const Footer: React.FC = () => {
         </a>
       </div>
 
-      {/* Copyright text */}
-      <p>&copy; 2024 Villa Model.</p>
+
     </footer>
   );
 };

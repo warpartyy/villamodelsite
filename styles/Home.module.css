@@ -107,6 +107,13 @@
   background-color: #14171b;
 }
 
+.card h1 {
+  margin: 0 1 0.75rem 0;
+  padding: 0px 15px;
+  
+}
+
+
 .card h2 {
   margin: 0 1 0.75rem 0;
 }
@@ -126,6 +133,16 @@
   margin-bottom: 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
+}
+
+ 
+
+.VillaParagraph {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  padding: 15px 15px;
 }
 
 
@@ -272,3 +289,96 @@
     background-position: 0% 50%;
   }
 }
+
+
+.imageContainer {
+  position: relative;
+}
+
+.imageContainer button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+
+
+
+
+
+.videoContainer {
+  overflow: hidden;
+}
+
+
+
+.zoomedVideo {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  transform: scale(1.5); /* Adjust the scale value as needed */
+}
+
+
+
+
+
+
+
+
+
+.lbCard {
+  width: 100%;
+  max-width: 1640px;
+  padding: 1px 1px;
+  margin: 0 auto;
+  text-align: center; /* Text alignment */
+  background-color: #131313;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 1px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  overflow: none;
+  border: none;
+
+}
+
+
+.Leaderboard {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+  text-align: center; /* Text alignment */
+
+}
+
+
+
+
+

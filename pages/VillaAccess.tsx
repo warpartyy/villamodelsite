@@ -1,11 +1,9 @@
-/* THIS IS THE MOST RECENT SAVED*/
-
 import { ConnectWallet, ThirdwebProvider, darkTheme } from "@thirdweb-dev/react";
 import styles from "../styles/Home.module.css";
 import { useRouter } from "next/router";
 import { useState } from "react";
 import { ethers } from "ethers";
-import { contractInfo } from "./contractInfo";
+import { contractInfo } from "../Components/contractInfo";
 import Header from './Header'; // Import the Header component
 import Footer from './Footer'; // Import the footer component
 
@@ -21,20 +19,6 @@ const VillaAccess: React.FC = () => {
       borderColor: "#6b0a0a",
     },
   });
-
-/********************************************** */
-/********************************************** */
-/********************************************** */
-/********************************************** */
-/********************************************** *//********************************************** */
-
-
-
-
-
-
-
-
 
 
 const handleLogin = async () => {
@@ -65,7 +49,7 @@ const handleLogin = async () => {
       router.push('/VillaToken');
     }
     
-  } catch (error) {
+  } catch (error: any) { // Explicitly typing error as any
     console.error("Error:", error.message);
     alert("Something went wrong.");
   }
@@ -100,7 +84,7 @@ const handleLogin = async () => {
 
   return (
     <main className={styles.main}>
-      <ThirdwebProvider>
+
         <Header />
         <div className={styles.container}>
           <div className={styles.header}>
@@ -133,7 +117,7 @@ const handleLogin = async () => {
           </div>
           <Footer/>
         </div>
-      </ThirdwebProvider>
+
     </main>
   );
 };

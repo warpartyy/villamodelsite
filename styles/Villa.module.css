@@ -176,3 +176,125 @@
   }
 }
 
+
+
+
+
+
+
+
+
+
+/* styles/Villa.module.css */
+
+.hero {
+  position: relative; /* Set the position of the hero section to relative */
+}
+
+/* styles/Villa.module.css */
+
+.heroVideo {
+  width: 100%; /* Set the width of the video to 100% of its container */
+  height: auto; /* Allow the height to adjust proportionally based on the width */
+  max-width: 2000; /* Set a maximum width to prevent the video from becoming too large */
+  margin: 0 auto; /* Center the video horizontally */
+}
+
+
+
+
+
+
+
+
+
+
+
+.MeVideoContainer {
+  position: relative; /* Set the position of the hero section to relative */
+}
+
+/* styles/Villa.module.css */
+
+.MeVideo {
+  width: 100%; /* Set the width of the video to 100% of its container */
+  height: auto; /* Allow the height to adjust proportionally based on the width */
+  max-width: 2000; /* Set a maximum width to prevent the video from becoming too large */
+  margin: 0 auto; /* Center the video horizontally */
+}
+
+
+
+
+
+
+/* Add this CSS to your stylesheets */
+.output-container {
+  margin-top: 20px;
+}
+
+.output-box {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #fff; /* Set background color to white */
+  border-radius: 4px;
+  color: #000; /* Set text color to black */
+}
+
+.error-message {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+.heroContainer {
+  position: relative;
+  width: 100%;
+  height: 400px; /* Adjust the height as needed */
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.hero {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}
+
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.heroTitle {
+  font-size: 3rem; /* Adjust the font size as needed */
+  margin-bottom: 10px;
+}
+
+.heroDescription {
+  font-size: 1.5rem; /* Adjust the font size as needed */
+}
+
+
+.heroOverlay {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}

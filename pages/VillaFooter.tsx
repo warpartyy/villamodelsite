@@ -30,4 +30,3 @@ const VillaFooter: React.FC = () => {
 };
 
 export default VillaFooter;
-/**/
