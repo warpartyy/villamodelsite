@@ -9,7 +9,7 @@ const TheVilla: React.FC = () => {
 
         <div className={styles.hero}>
         <video className={styles.heroVideo} autoPlay loop muted>
-          <source src="/videos/Psych1_1.mp4" type="video/mp4" />
+          <source src="/videos/The_Villa.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>
