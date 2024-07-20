@@ -19,9 +19,18 @@ const VillaHeader: React.FC = () => {
       </div>
       <nav className={styles.nav}>
         <ul>
-
-
-
+          <li>
+            <Link href="/Page1">Page 1</Link>
+          </li>
+          <li>
+            <Link href="/EarlyAccess">Early Access</Link>
+          </li>
+          <li>
+            <Link href="/BTS">BTS</Link>
+          </li>
+          <li>
+            <Link href="/Furnace">Redeem</Link>
+          </li>
 
         </ul>
       </nav>
