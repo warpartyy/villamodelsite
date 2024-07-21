@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import Image from "next/image";
 import Header from './Header';
 import Footer from './Footer';
-
+export const runtime = "edge";
 // Define the SongCard component
 const SongCard: React.FC<{ imageUrl: string; songTitle: string; songUrl: string }> = ({ imageUrl, songTitle, songUrl }) => {
   return (

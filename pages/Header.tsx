@@ -4,7 +4,7 @@ import styles from '../styles/Header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons';
 import HeaderLoginButton from "./HeaderLoginButton";
-
+export const runtime = "edge";
 const Header: React.FC = () => {
   return (
     <header className={styles.header}>

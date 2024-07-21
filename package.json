@@ -36,6 +36,7 @@
     "webpack": "^5.93.0"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.12.1",
     "@types/node": "^18.11.11",
     "@types/react": "^18",
     "eslint": "^8.29.0",

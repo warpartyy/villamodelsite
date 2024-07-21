@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons';
 import React from 'react';
 import styles from '../styles/VillaFooter.module.css'; // Import CSS styles for footer
-
+export const runtime = "edge";
 const VillaFooter: React.FC = () => {
   return (
     <footer className={styles.footer}>

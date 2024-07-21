@@ -1,7 +1,7 @@
 import styles from "../styles/Villa.module.css";
 import VillaHeader from "./VillaHeader";
 import VillaFooter from "./VillaFooter";
-
+export const runtime = "edge";
 const TheVilla: React.FC = () => {
   return (
     <main className={styles.main}>
