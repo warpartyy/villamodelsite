@@ -23,13 +23,10 @@ const VillaHeader: React.FC = () => {
             <Link href="/Page1">Page 1</Link>
           </li>
           <li>
-            <Link href="/EarlyAccess">Early Access</Link>
+            <Link href="/Page2">Page 2</Link>
           </li>
           <li>
-            <Link href="/BTS">BTS</Link>
-          </li>
-          <li>
-            <Link href="/Furnace">Redeem</Link>
+            <Link href="/Page3">Page 3</Link>
           </li>
 
         </ul>
