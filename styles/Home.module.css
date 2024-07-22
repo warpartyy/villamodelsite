@@ -5,6 +5,12 @@
   margin: 0 auto;
 }
 
+.TokenvideoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 10px; /* Adjust the gap between columns */
+}
+
 .container2 {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal-width columns */
@@ -78,14 +84,18 @@
 
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text inside the card */
   background-color: #131313;
-  text-align: left;
   color: inherit;
-  text-decoration: none;
-  border-radius: 1px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  overflow: none;
-  border: none;
+  border-radius: 8px;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  padding: 1rem;
 }
 
 .cardText {
@@ -378,7 +388,12 @@
 
 }
 
-
-
+.nftDescription {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  text-align: center; /* Center align the paragraph text */
+}
 
 

@@ -19,6 +19,9 @@ const VillaHeader: React.FC = () => {
       </div>
       <nav className={styles.nav}>
         <ul>
+        <li>
+            <Link href="/TheVilla">The Villa</Link>
+          </li>
           <li>
             <Link href="/Page1">Page 1</Link>
           </li>

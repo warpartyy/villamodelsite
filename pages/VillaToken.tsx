@@ -13,12 +13,12 @@ const VillaToken: React.FC = () => {
         <h1 className={styles.title}>$VILLA Tokens</h1>
         <div className={styles.container2}>
 
-          <div className={styles.videoContainer}>
+{/*}          <div className={styles.TokenvideoContainer}>
             <video className={styles.zoomedVideo} autoPlay muted loop controls={false}>
             <source src="/videos/token.mp4" type="video/mp4" />Your browser does not support the video tag.
             </video>
           </div>
-  
+  */} 
           <div className={styles.card}>
                 <h1>Villa Model Tokens</h1>
                 <p className={styles.VillaParagraph}>

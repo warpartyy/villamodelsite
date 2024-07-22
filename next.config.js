@@ -5,7 +5,7 @@ const nextConfig = {
   basePath: "",
 
   // Optional: Enable static export for Cloudflare Pages
-  output: 'export',
+//  output: 'export',
 
   // Configure Webpack
   webpack(config) {

@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter, faInstagram, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faInstagram, faSpotify, faApple, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import HeaderLoginButton from "./HeaderLoginButton";
 
 const Header: React.FC = () => {
@@ -40,6 +40,11 @@ const Header: React.FC = () => {
         <a href="https://www.twitter.com/villa_model/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faTwitter} />
         </a>
+
+        <a href="https://www.tiktok.com/@villa.model" target="_blank" rel="noopener noreferrer"> {/* Add your TikTok link */}
+          <FontAwesomeIcon icon={faTiktok} />
+        </a>
+
         <a href="https://www.instagram.com/villa.model/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} />
         </a>

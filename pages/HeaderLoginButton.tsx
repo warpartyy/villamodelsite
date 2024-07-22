@@ -12,7 +12,7 @@ const HeaderLoginButton: React.FC = () => {
 
   return (
     <button className={styles.connectWalletBtn} onClick={handleLogin}>
-      Enter The Villa
+      The Villa
     </button>
   );
 };

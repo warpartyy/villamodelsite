@@ -104,10 +104,11 @@
 .connectWalletBtn{
   accent-color: #c70000 !important;
   background: #000000 !important;
-
+  
   border-color: #6b0a0a !important;
   color: #cbcbd2 !important;
   border: 1px solid #6b0a0a !important;
+  font-size: 18px; /* Adjust the size as needed */
 }
 
 .connectWalletBtn:hover {
