@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOutAlt } from '@fortawesome/free-solid-svg-icons'; // Importing logout icon
 import styles from '../styles/VillaHeader.module.css';
-export const runtime = "edge";
+
 const VillaHeader: React.FC = () => {
   const router = useRouter();
 

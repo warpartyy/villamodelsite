@@ -1,7 +1,7 @@
 import styles from "../styles/Home.module.css";
 import Header from './Header'; // Import the Header component
 import Footer from './Footer'; // Import the footer component
-export const runtime = "edge";
+
 
 
 const VillaToken: React.FC = () => {

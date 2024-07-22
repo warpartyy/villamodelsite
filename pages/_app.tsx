@@ -5,7 +5,7 @@ import { polygon } from "thirdweb/chains";
 require('dotenv').config();
 import { ThirdWebAPI } from '../Components/config';
 
-export const runtime = "edge";
+
 
 const activeChain = "polygon";
 

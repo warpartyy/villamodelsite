@@ -6,7 +6,7 @@ import { ethers } from "ethers";
 import { contractInfo } from "../Components/contractInfo";
 import Header from './Header'; // Import the Header component
 import Footer from './Footer'; // Import the footer component
-export const runtime = "edge";
+
 const VillaAccess: React.FC = () => {
   const router = useRouter();
   const [userTokenBalance, setUserTokenBalance] = useState<number>(0);

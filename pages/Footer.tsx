@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faInstagram, faSpotify, faApple } from '@fortawesome/free-brands-svg-icons';
 import styles from '../styles/Footer.module.css'; // Import CSS styles for footer
-export const runtime = "edge";
+
 const Footer: React.FC = () => {
   return (
     <footer className={styles.footer}>
