@@ -53,7 +53,7 @@ const NFTs: React.FC = () => {
           </p>
           <div className={styles.container3}>
             <div className={styles.card}>
-              <Image src="/images/wannabee.jpg" width={300} height={300} alt="Wannabee" />
+              <Image src="/images/Wannabee1.jpg" width={300} height={300} alt="Wannabee" />
               <h2>Wannabee</h2>
               <p>Description of Wannabee NFT on SIKI</p>
             </div>
