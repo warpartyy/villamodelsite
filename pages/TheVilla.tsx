@@ -9,6 +9,13 @@ const TheVilla: React.FC = () => {
 
         <div className={styles.container}>
           <div className={styles.header}>
+          <div className={styles.videoContainer}>
+              <video className={styles.heroVideo} autoPlay loop muted>
+                <source src="/videos/The_Villa.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+
             <h1 className={styles.title}>
               THE
               {" "}
@@ -24,12 +31,7 @@ const TheVilla: React.FC = () => {
               Some of the coolest projects I&apos;ve seen built in the open. This is The Villa.
             </p>
 
-            <div className={styles.videoContainer}>
-              <video className={styles.heroVideo} autoPlay loop muted>
-                <source src="/videos/The_Villa.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
+
           </div>
         </div>
         <VillaFooter/>

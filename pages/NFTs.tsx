@@ -23,12 +23,13 @@ const NFTs: React.FC = () => {
         <Header />
         <div className={styles.container}>
           <h1 className={styles.title}>NFTs</h1>
-          {/* New paragraph about NFTs */}
           <p className={styles.nftDescription}>
             NFTs (Non-Fungible Tokens) are unique digital assets verified using blockchain technology. Unlike cryptocurrencies such as Bitcoin, which are interchangeable, each NFT has distinct attributes that make it one-of-a-kind. They can represent various forms of digital content, such as art, music, and collectibles. By owning an NFT, you gain verifiable ownership of a unique digital item, and many NFTs offer additional benefits such as exclusive access or rewards.
           </p>
           <h1>Sound Drops</h1>
-          <p>{/*Info about Sound and Optimism. Include that you receive $VILLA*/}</p>
+          <p>
+            Our sound drops are exclusive music releases available as NFTs. By collecting these NFTs, you not only get access to unique tracks but also receive $VILLA tokens as a reward. $VILLA tokens can be used for various benefits within our ecosystem, including special access and future drops.
+          </p>
           <div className={styles.container3}>
             <SongCard
               imageUrl="/images/ReadyOrNot.jpg"
@@ -46,18 +47,27 @@ const NFTs: React.FC = () => {
               songUrl="https://www.sound.xyz/villamodel/my-quest"
             />
           </div>
-          <p>{/* */}</p>
-
-          {/*}          <h1> Siki</h1>
-          <p>info about siki and hedera?</p>
-          <div className={styles.container2}>
+          <h1>SIKI Integration</h1>
+          <p>
+            SIKI is a cutting-edge platform for creating, managing, and trading NFTs. It leverages the Hedera Hashgraph network to ensure fast, secure, and scalable transactions. Hedera Hashgraph is known for its high throughput and low transaction fees, making it an ideal choice for NFT projects. By integrating with SIKI, we can offer our community seamless experiences and access to a wide range of NFT functionalities.
+          </p>
+          <div className={styles.container3}>
             <div className={styles.card}>
+              <Image src="/images/wannabee.jpg" width={300} height={300} alt="Wannabee" />
               <h2>Wannabee</h2>
+              <p>Description of Wannabee NFT on SIKI</p>
             </div>
             <div className={styles.card}>
+              <Image src="/images/WithoutYou.jpg" width={300} height={300} alt="Without You" />
               <h2>Without You</h2>
+              <p>Description of Without You NFT on SIKI</p>
             </div> 
-          </div> */}
+            <div className={styles.card}>
+              <Image src="/images/HangingOn.jpg" width={300} height={300} alt="Hanging On" />
+              <h2>Hanging On</h2>
+              <p>Description of Hanging On NFT on SIKI</p>
+            </div> 
+          </div>
         </div>
         <Footer />
       {/*<ThirdwebProvider>*/}
