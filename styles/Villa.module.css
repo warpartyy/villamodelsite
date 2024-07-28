@@ -2,7 +2,6 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-
 .body {
   padding: 0;
   margin: 0;
@@ -14,15 +13,10 @@
   text-decoration: none;
 }
 
-
-
 .body {
   color: #e7e8e8;
   background: #560000;
 }
-
-
-
 
 .container {
   width: 100%;
@@ -30,9 +24,6 @@
   padding: 0 1rem;
   margin: 0 auto;
 }
-
-
-
 
 .connect {
   margin-bottom: 2rem;
@@ -50,19 +41,15 @@
   font-size: 1.5rem;
 }
 
-
-
-/*Define the gradient*/
-.card a{
+/* Define the gradient */
+.card a {
   background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
   background-size: 200% auto; /* Background size to twice its width */
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  transition: background-position 0.5s; /* Transition duration*/
+  transition: background-position 0.5s; /* Transition duration */
 }
-
-
 
 .logo {
   height: 1em;
@@ -83,9 +70,7 @@
   }
 }
 
-
-
-/*.card,    idk that I need this?*/
+/* .card, idk that I need this? */
 .footer {
   border-color: #222;
 }
@@ -93,21 +78,13 @@
   filter: invert(1);
 }
 
-.connectWalletBtn{
-  
-
+.connectWalletBtn {
   accent-color: #c70000 !important;
   background: #000000 !important;
-
   border-color: #6b0a0a !important;
   color: #cbcbd2 !important;
   border: 1px solid #6b0a0a !important;
-
-  
-
 }
-
-
 
 .connectWalletBtn:hover {
   background-color: #000000 !important;
@@ -115,14 +92,7 @@
   border: 1px solid #c70000 !important;
 }
 
-
-
-
 /**************/
-
-
-/*This is cool but needs some work.*/
-
 
 .maybeLater {
   width: 100%;
@@ -172,18 +142,9 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-5s0px);
+    transform: translateY(-50px);
   }
 }
-
-
-
-
-
-
-
-
-
 
 /* styles/Villa.module.css */
 
@@ -191,68 +152,27 @@
   position: relative; /* Set the position of the hero section to relative */
 }
 
-/* styles/Villa.module.css */
-
 .heroVideo {
   width: 100%; /* Set the width of the video to 100% of its container */
   height: auto; /* Allow the height to adjust proportionally based on the width */
-  max-width: 2000; /* Set a maximum width to prevent the video from becoming too large */
+  max-width: 2000px; /* Set a maximum width to prevent the video from becoming too large */
   margin: 0 auto; /* Center the video horizontally */
 }
 
-
-
-
-
-
-
-
-
-
-
-.MeVideoContainer {
-  position: relative; /* Set the position of the hero section to relative */
+.videoContainer {
+  position: relative;
+  width: 100%;
+  max-width: 100%; /* Adjust this value if needed */
+  margin: 0 auto;
 }
 
-/* styles/Villa.module.css */
-
-.MeVideo {
-  width: 100%; /* Set the width of the video to 100% of its container */
-  height: auto; /* Allow the height to adjust proportionally based on the width */
-  max-width: 2000; /* Set a maximum width to prevent the video from becoming too large */
-  margin: 0 auto; /* Center the video horizontally */
+.videoContainer video {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* Hide controls */
+  controls: none;
 }
-
-
-
-
-
-
-/* Add this CSS to your stylesheets */
-.output-container {
-  margin-top: 20px;
-}
-
-.output-box {
-  border: 1px solid #ccc;
-  padding: 10px;
-  background-color: #fff; /* Set background color to white */
-  border-radius: 4px;
-  color: #000; /* Set text color to black */
-}
-
-.error-message {
-  color: red;
-}
-
-
-
-
-
-
-
-
-
 
 .heroContainer {
   position: relative;
@@ -266,13 +186,11 @@
   object-fit: cover;
 }
 
-
 .hero {
   position: relative;
   width: 10%;
   height: 10%;
 }
-
 
 .heroText {
   position: absolute;
@@ -292,9 +210,34 @@
   font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
-
 .heroOverlay {
   position: relative;
   width: 10%;
   height: 10%;
+}
+
+/* Villa.module.css */
+.playlistContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.playlist {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.playlist li {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.playlist li:hover {
+  background-color: #f0f0f0;
 }
