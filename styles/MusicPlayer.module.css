@@ -1,0 +1,108 @@
+/* MusicPlayer.module.css */
+
+/* Container for the music player */
+.musicPlayerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  /* Header for the music player */
+  .musicPlayerHeader {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  /* Controls container */
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Buttons for controls */
+  .controlButton {
+    background-color: #007bff; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Button hover effect */
+  .controlButton:hover {
+    background-color: #0056b3; /* Darker blue */
+  }
+  
+  /* Progress bar container */
+  .progressContainer {
+    width: 100%;
+    margin: 10px 0;
+  }
+  
+  /* Progress bar */
+  .progressBar {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #ddd;
+    position: relative;
+  }
+  
+  /* Progress bar fill */
+  .progressFill {
+    height: 100%;
+    border-radius: 5px;
+    background-color: #007bff; /* Blue fill */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Track list */
+  .trackList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  /* Track item */
+  .trackItem {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Track hover effect */
+  .trackItem:hover {
+    background-color: #007bff; /* Blue background */
+    color: white;
+  }
+  
+  .trackItem.active {
+    background-color: #0056b3; /* Darker blue */
+    color: white;
+  }
+  
+  /* Current time and duration */
+  .timeInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  

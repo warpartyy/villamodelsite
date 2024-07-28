@@ -1,37 +1,24 @@
 import React from 'react';
-import styles from '../styles/Villa.module.css';
-import VillaHeader from './VillaHeader';
-import VillaFooter from './VillaFooter';
-import MusicPlayer from './MusicPlayer'; // Import the MusicPlayer component
+import MusicPlayer from '../Components/MusicPlayer'; // Adjust the import path if needed
+
+
+//Add the paths to song files
+const tracks = [
+  { id: 1, title: '34', url: '../audio/34.mp3' },
+  { id: 2, title: 'Local', url: '../audio/Local.mp3' },
+  { id: 3, title: 'Serotonin', url: '../audio/Serotonin.mp3' },
+  // Add more tracks as needed
+];
 
 const EarlyAccess: React.FC = () => {
   return (
-    <main className={styles.main}>
-      <VillaHeader />
-      
-      <div className={styles.container}>
-        <div className={styles.header}>
-          <h1 className={styles.title}>
-            Early 
-            {" "}
-            <span className={styles.gradientText0}>
-              Access
-            </span>
-          </h1>
-          <p className={styles.description}>
-            Spoiler Alert!
-          </p>
-          
-          <p className={styles.description}>
-            This playlist is of songs that are not finished and will be released at some point. Not in any particular order. Mostly instrumental.
-          </p>
+    <div>
 
-          <MusicPlayer /> {/* Use the MusicPlayer component */}
-        </div>
-      </div>
+      <h1>Early Access</h1>
 
-      <VillaFooter />
-    </main>
+      <p>Welcome to the Early Access page! Enjoy some exclusive content.</p>
+      <MusicPlayer tracks={tracks} />
+    </div>
   );
 };
 
