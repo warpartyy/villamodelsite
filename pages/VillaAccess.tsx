@@ -7,6 +7,7 @@ import { contractInfo } from "../Components/contractInfo";
 import Header from './Header'; // Import the Header component
 import Footer from './Footer'; // Import the footer component
 
+
 const VillaAccess: React.FC = () => {
   const router = useRouter();
   const [userTokenBalance, setUserTokenBalance] = useState<number>(0);
@@ -57,25 +58,6 @@ const handleLogin = async () => {
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**fasdfasdfasdfasdsdfadsfasdfasdfasdfasdfadsf */
 
 
@@ -92,7 +74,7 @@ const handleLogin = async () => {
               The
               <span className={styles.gradientText0}>Villa</span>
             </h1>
-            <p className={styles.description}>Login with $Villa tokens.</p>
+            <p className={styles.description}>Sign in with $Villa tokens.</p>
             <div className={styles.connect}>
               <ConnectWallet
                 btnTitle="Login"

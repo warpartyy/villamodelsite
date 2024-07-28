@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/Villa.module.css';
 import VillaHeader from './VillaHeader';
 import VillaFooter from './VillaFooter';
+import MusicPlayer from './MusicPlayer'; // Import the MusicPlayer component
 
 const EarlyAccess: React.FC = () => {
   return (
@@ -18,15 +19,14 @@ const EarlyAccess: React.FC = () => {
             </span>
           </h1>
           <p className={styles.description}>
-            P1
+            Spoiler Alert!
           </p>
           
           <p className={styles.description}>
-            Unreleased
+            This playlist is of songs that are not finished and will be released at some point. Not in any particular order. Mostly instrumental.
           </p>
 
-          {/* Remove AudioVisualizer */}
-          {/* <AudioVisualizer /> */}
+          <MusicPlayer /> {/* Use the MusicPlayer component */}
         </div>
       </div>
 

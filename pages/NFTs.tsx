@@ -26,27 +26,9 @@ const NFTs: React.FC = () => {
           <p className={styles.nftDescription}>
             NFTs (Non-Fungible Tokens) are unique digital assets verified using blockchain technology. Unlike cryptocurrencies such as Bitcoin, which are interchangeable, each NFT has distinct attributes that make it one-of-a-kind. They can represent various forms of digital content, such as art, music, and collectibles. By owning an NFT, you gain verifiable ownership of a unique digital item, and many NFTs offer additional benefits such as exclusive access or rewards.
           </p>
-          <h1>Sound Drops</h1>
-          <p>
-            Our sound drops are exclusive music releases available as NFTs. By collecting these NFTs, you not only get access to unique tracks but also receive $VILLA tokens as a reward. $VILLA tokens can be used for various benefits within our ecosystem, including special access and future drops.
-          </p>
-          <div className={styles.container3}>
-            <SongCard
-              imageUrl="/images/ReadyOrNot.jpg"
-              songTitle="Ready or Not"
-              songUrl="https://www.sound.xyz/villamodel/ready-or-not"
-            />
-            <SongCard
-              imageUrl="/images/AllTheseThings.jpg"
-              songTitle="All These Things"
-              songUrl="https://www.sound.xyz/villamodel/all-these-things"
-            />
-            <SongCard
-              imageUrl="/images/MyQuest.jpg"
-              songTitle="My Quest"
-              songUrl="https://www.sound.xyz/villamodel/my-quest"
-            />
-          </div>
+
+{/*SIKI*/}
+
           <h1>SIKI Integration</h1>
           <p>
             SIKI is a cutting-edge platform for creating, managing, and trading NFTs. It leverages the Hedera Hashgraph network to ensure fast, secure, and scalable transactions. Hedera Hashgraph is known for its high throughput and low transaction fees, making it an ideal choice for NFT projects. By integrating with SIKI, we can offer our community seamless experiences and access to a wide range of NFT functionalities.
@@ -68,6 +50,33 @@ const NFTs: React.FC = () => {
               <p>Description of Hanging On NFT on SIKI</p>
             </div> 
           </div>
+
+
+{/*SOUND */}
+          <h1>Sound Drops</h1>
+          <p>
+            Our sound drops are exclusive music releases available as NFTs. By collecting these NFTs, you not only get access to unique tracks but also receive $VILLA tokens as a reward. $VILLA tokens can be used for various benefits within our ecosystem, including special access and future drops.
+          </p>
+          <div className={styles.container3}>
+            <SongCard
+              imageUrl="/images/ReadyOrNot.jpg"
+              songTitle="Ready or Not"
+              songUrl="https://www.sound.xyz/villamodel/ready-or-not"
+            />
+            <SongCard
+              imageUrl="/images/AllTheseThings.jpg"
+              songTitle="All These Things"
+              songUrl="https://www.sound.xyz/villamodel/all-these-things"
+            />
+            <SongCard
+              imageUrl="/images/MyQuest.jpg"
+              songTitle="My Quest"
+              songUrl="https://www.sound.xyz/villamodel/my-quest"
+            />
+          </div>
+
+
+
         </div>
         <Footer />
       {/*<ThirdwebProvider>*/}
