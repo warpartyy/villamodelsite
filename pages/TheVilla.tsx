@@ -10,13 +10,6 @@ const TheVilla: React.FC = () => {
       <div className={styles.container}>
         <div className={styles.header}>
 
-        <div className={styles.videoContainer}>
-            <video className={styles.heroVideo} autoPlay loop muted>
-              <source src="/videos/TheVilla.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-        </div>
-
 
           <h1 className={styles.title}>
             Welcome to{" "}

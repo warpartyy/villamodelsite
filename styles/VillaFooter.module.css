@@ -15,22 +15,15 @@
 }
   
 
-.social {
-  /**/
-}
-
 .social a {
+  margin: 0 15px; /* Adjust horizontal spacing between icons */
   font-size: 40px; /* Adjust the size of the icons */
-  margin-right: 10px; /* Adjust the right margin for spacing */
   color: #000000;
-} 
-
+  text-decoration: none; /* Ensure no underline by default */
+}
     
 .a {
 color: #e50505;
 text-decoration: none;
 }
-
-
-
 

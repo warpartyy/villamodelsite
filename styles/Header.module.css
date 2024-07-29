@@ -6,6 +6,7 @@
   background-color: black; /* Change background color */
   color: rgb(255, 255, 255); /* Change text color */
   padding: 1rem 20px; /* Adjust padding */
+  font-size: 24px; /* Adjust the font size */
 }
 
 .stack {
@@ -108,7 +109,7 @@
   border-color: #6b0a0a !important;
   color: #cbcbd2 !important;
   border: 1px solid #6b0a0a !important;
-  font-size: 18px; /* Adjust the size as needed */
+  font-size: 20px; /* Adjust the size as needed */
 }
 
 .connectWalletBtn:hover {
