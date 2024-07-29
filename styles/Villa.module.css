@@ -18,6 +18,16 @@
   background: #560000;
 }
 
+.gradientText1 {
+  background: linear-gradient(to right, #ff3366, #33ff99, #ffcc33); /* Use standard linear-gradient */
+  background-clip: text; /* Clip the background to the text */
+  -webkit-background-clip: text; /* For Safari */
+  color: transparent; /* Make sure text color is transparent */
+}
+
+
+
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -69,6 +79,33 @@
     line-height: 1.15;
   }
 }
+
+.title {
+  text-align: center; /* Center-aligns the text horizontally */
+  margin: 0; /* Remove default margin if needed */
+  padding: 20px; /* Add padding if needed */
+  font-size: 3em; /* Adjust font size as needed */
+  font-weight: bold; /* Make text bold if desired */
+}
+
+.title2 {
+  text-align: left; /* Align text to the left */
+  margin-bottom: 5px; /* Reduced margin below title */
+  padding-left: 40px; /* Increase indentation for titles */
+  font-size: 1.5em; /* Slightly smaller font size */
+  font-weight: bold; /* Make text bold */
+}
+
+.description {
+  text-align: left; /* Align text to the left */
+  padding-left: 40px; /* Increase indentation for paragraphs */
+  font-size: 1.2em; /* Adjust font size as needed */
+  margin-top: 0; /* Reduce space above the paragraph */
+  margin-bottom: 20px; /* Increase space below the paragraph */
+}
+
+
+
 
 /* .card, idk that I need this? */
 .footer {
@@ -352,3 +389,5 @@
 .trackNumber {
   margin-right: 10px;
 }
+
+

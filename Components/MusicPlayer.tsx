@@ -1,8 +1,5 @@
-// pages/MusicPlayer.tsx
-
-import React, { useState, useEffect, ChangeEvent } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from '../styles/MusicPlayer.module.css';
-
 
 interface Track {
   id: number;
@@ -23,7 +20,7 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ tracks }) => {
   useEffect(() => {
     const newAudio = new Audio(tracks[currentTrackIndex].url);
     setAudio(newAudio);
-    
+
     if (isPlaying) {
       newAudio.play();
     }
@@ -73,9 +70,21 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ tracks }) => {
     setIsPlaying(true);
   };
 
+  const handleProgressBarClick = (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    if (!audio) return;
+
+    const progressContainer = event.currentTarget;
+    const offsetX = event.nativeEvent.offsetX;
+    const width = progressContainer.clientWidth;
+    const newTime = (offsetX / width) * audio.duration;
+
+    audio.currentTime = newTime;
+    setProgress((audio.currentTime / audio.duration) * 100);
+    setIsPlaying(true); // Start playing if it was paused
+  };
+
   return (
-    <div className={styles.musicPlayerContainer}>
-      <h2 className={styles.musicPlayerHeader}>Music Player</h2>
+    <div className={styles.musicPlayer}>
       <div className={styles.controls}>
         <button
           className={styles.controlButton}
@@ -96,39 +105,28 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ tracks }) => {
           Next
         </button>
       </div>
-      <div className={styles.progressContainer}>
-        <div className={styles.progressBar}>
-          <div
-            className={styles.progressFill}
-            style={{ width: `${progress}%` }}
-          ></div>
-        </div>
+      <div className={styles.progressContainer} onClick={handleProgressBarClick}>
+        <div
+          className={styles.progressBar}
+          style={{ width: `${progress}%` }}
+        ></div>
       </div>
-      <ul className={styles.trackList}>
+      <ul className={styles.songList}>
         {tracks.map((track, index) => (
           <li
             key={track.id}
-            className={`${styles.trackItem} ${
+            className={`${styles.songItem} ${
               index === currentTrackIndex ? styles.active : ''
             }`}
             onClick={() => handleTrackClick(index)}
           >
+            <span className={styles.trackNumber}>{track.id}</span>
             {track.title}
           </li>
         ))}
       </ul>
-      <div className={styles.timeInfo}>
-        <span>{audio ? formatTime(audio.currentTime) : '0:00'}</span>
-        <span>{audio ? formatTime(audio.duration) : '0:00'}</span>
-      </div>
     </div>
   );
-};
-
-const formatTime = (time: number) => {
-  const minutes = Math.floor(time / 60);
-  const seconds = Math.floor(time % 60).toString().padStart(2, '0');
-  return `${minutes}:${seconds}`;
 };
 
 export default MusicPlayer;

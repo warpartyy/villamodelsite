@@ -1,108 +1,95 @@
-/* MusicPlayer.module.css */
-
-/* Container for the music player */
-.musicPlayerContainer {
+/* General Styles */
+.musicPlayer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f0f0f0;
-    border-radius: 8px;
     padding: 20px;
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  /* Header for the music player */
-  .musicPlayerHeader {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 15px;
-  }
-  
-  /* Controls container */
-  .controls {
+    background-color: #3b0a0a; /* Dark red background color */
+    border-radius: 10px; /* Rounded corners */
+    width: 80%; /* Width of the player */
+    max-width: 1200px; /* Max width */
+    margin: 0 auto; /* Center the player */
+    color: #f8d7da; /* Light red text color */
+    height: 70vh; /* Height relative to viewport */
+    overflow-y: auto; /* Vertical scrolling if needed */
+    margin-bottom: 40px; /* Space below the player */
+}
+
+/* Controls */
+.controls {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-  }
-  
-  /* Buttons for controls */
-  .controlButton {
-    background-color: #007bff; /* Blue background */
+    margin-bottom: 20px;
+}
+
+.controls button {
+    background-color: #a80000; /* Dark red button background */
     border: none;
-    border-radius: 5px;
-    color: white;
+    border-radius: 5%; /* Rounded buttons */
+    color: #f8d7da; /* Light red text color */
     padding: 10px;
+    margin: 0 5px; /* Space between buttons */
     cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Button hover effect */
-  .controlButton:hover {
-    background-color: #0056b3; /* Darker blue */
-  }
-  
-  /* Progress bar container */
-  .progressContainer {
-    width: 100%;
-    margin: 10px 0;
-  }
-  
-  /* Progress bar */
-  .progressBar {
-    width: 100%;
-    height: 8px;
-    border-radius: 5px;
-    background-color: #ddd;
-    position: relative;
-  }
-  
-  /* Progress bar fill */
-  .progressFill {
-    height: 100%;
-    border-radius: 5px;
-    background-color: #007bff; /* Blue fill */
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  
-  /* Track list */
-  .trackList {
+    width: 60px; /* Button width */
+    height: 50px; /* Button height */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.controls button:hover {
+    background-color: #e60000; /* Lighter red on hover */
+    transform: scale(1.1); /* Slightly enlarge button on hover */
+}
+
+/* Track Info */
+.trackInfo {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    color: #f8d7da; /* Light red for track info */
+}
+
+/* Song List */
+.songList {
     list-style: none;
     padding: 0;
     margin: 0;
     width: 100%;
-  }
-  
-  /* Track item */
-  .trackItem {
+}
+
+.songItem {
     padding: 10px;
-    border-bottom: 1px solid #ccc;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* Track hover effect */
-  .trackItem:hover {
-    background-color: #007bff; /* Blue background */
-    color: white;
-  }
-  
-  .trackItem.active {
-    background-color: #0056b3; /* Darker blue */
-    color: white;
-  }
-  
-  /* Current time and duration */
-  .timeInfo {
-    display: flex;
-    justify-content: space-between;
+    border-bottom: 1px solid #a80000; /* Dark red border color */
+    transition: background-color 0.3s, color 0.3s;
+    color: #f8d7da; /* Light red text color */
+}
+
+.songItem:hover {
+    background-color: #a80000; /* Dark red background on hover */
+    color: #f8d7da; /* Light red text color on hover */
+}
+
+.active {
+    background-color: #e60000; /* Lighter red for active track */
+    color: #f8d7da; /* Light red text color for active track */
+}
+
+.trackNumber {
+    margin-right: 10px;
+}
+
+
+/* Progress Bar */
+.progressContainer {
     width: 100%;
-    font-size: 0.9rem;
-    color: #333;
-  }
-  
+    height: 10px; /* Adjust height as needed */
+    background-color: #1b1818; /* Dark red background for the progress container */
+    border-radius: 5px; /* Rounded corners for the container */
+    cursor: pointer;
+    margin-bottom: 20px; /* Space below the progress bar */
+}
+
+.progressBar {
+    height: 100%;
+    background-color: #e60000; /* Lighter red for the progress fill */
+    border-radius: 5px; /* Rounded corners for the progress fill */
+}
