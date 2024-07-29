@@ -42,6 +42,9 @@ const Home: NextPage = () => {
                 Home page
               </p>
               <div>
+
+
+{/* Spotify Embed */}
 <div>
 <iframe 
                 style={{ borderRadius: "12px" }} 
@@ -53,8 +56,6 @@ const Home: NextPage = () => {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy"
               ></iframe>
-
-
 </div>
 
 
