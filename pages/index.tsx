@@ -31,32 +31,14 @@ const Home: NextPage = () => {
           <div className={styles.container}>
             <div className={styles.header}>
               <h1 className={styles.title}>
-                Villa
+                The
                 {" "}
                 <span className={styles.gradientText0}>
-                  Model
+                  Villa
                 </span>
               </h1>
-
-              <p className={styles.description}>
-                Home page
-              </p>
               <div>
 
-
-{/* Spotify Embed */}
-<div>
-<iframe 
-                style={{ borderRadius: "12px" }} 
-                src="https://open.spotify.com/embed/playlist/7cUBLPqiuS8G0tNm04xXzE?utm_source=generator&theme=0" 
-                width="100%" 
-                height="352" 
-                frameBorder="0" 
-                allowFullScreen={true}
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-                loading="lazy"
-              ></iframe>
-</div>
 
 
 

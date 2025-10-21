@@ -15,24 +15,23 @@ const Header: React.FC = () => {
       </div>
       <nav className={styles.nav}>
         <ul>
+        
           <li>
             <Link href="/">
               Home
             </Link>
           </li>
-          <li>
-            <Link href="/VillaToken">
-              Tokens
-            </Link>
-          </li>
+
           <li>
             <Link href="/NFTs">
               NFTs
             </Link>
           </li>
+          
           <li>
             <a href="https://villamodel.myshopify.com/" target="_blank" rel="noopener noreferrer">Merch</a>
           </li>
+        
         </ul>
       </nav>
       <div className={styles.social}>
@@ -48,12 +47,8 @@ const Header: React.FC = () => {
         <a href="https://www.instagram.com/villa.model/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faInstagram} />
         </a>
-        <a href="https://open.spotify.com/artist/2Xv8NRrv3DKbD3DF5HKRtt" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faSpotify} />
-        </a>
-        <a href="http://itunes.apple.com/album/id/1531848492" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faApple} />
-        </a>
+
+
 
         <div className={styles.loginButton}>
         <HeaderLoginButton />
